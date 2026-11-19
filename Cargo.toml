@@ -1,8 +1,15 @@
 [package]
-name = "sigmaos-conf-archlinux-org"
+name = "SigmaOS-conf-archlinux-org"
 version = "0.1.0"
 edition = "2021"
-license = "MIT"
-description = "Community conference website — SigmaOS component inspired by Arch Linux infrastructure."
+license = "Apache-2.0"
+description = "SigmaOS conf_archlinux_org component"
+
+[lib]
+name = "conf_archlinux_org"
+path = "src/lib.rs"
 
 [dependencies]
+thiserror = "1"
+
+[dev-dependencies]
