@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-conf-archlinux-org"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
 description = "SigmaOS conf-archlinux-org component (Arch Linux inspired)"
-upstream = []
+upstream = ["https://github.com/archlinux/conf.archlinux.org"]
 
 [contract]
-provides = ["component"]
+provides = ["hugo-content-model", "frontmatter-parse", "site-config"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
+test_evidence = "cargo test: 7 tests pass (frontmatter, config menus, content index, archetypes)"
 next_milestone = "Hardware and runtime integration"
